@@ -380,6 +380,17 @@
                   <option value="3">Admin</option>
                 </select>
               </div>
+              <div class="form-group mb-3">
+                <label for="primaryLoginPassword" class="fw-bold mb-2">Primary Login Password</label>
+                <input
+                  type="password"
+                  class="form-control border"
+                  id="primaryLoginPassword"
+                  required
+                  placeholder="Password"
+                  maxlength="25"
+                />
+              </div>
               <div class="form-group">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
@@ -442,6 +453,16 @@
                   <option value="2">Modaratior</option>
                   <option value="3">Admin</option>
                 </select>
+              </div>
+              <div class="form-group mb-3">
+                <label for="changePrimaryLoginPassword" class="fw-bold mb-2">Change Primary Login Password</label>
+                <input
+                  type="password"
+                  class="form-control border"
+                  id="changePrimaryLoginPassword"
+                  maxlength="25"
+                  placeholder="Change password optional"
+                />
               </div>
               <div class="form-group">
                 <button type="submit" class="btn btn-primary">Update</button>
