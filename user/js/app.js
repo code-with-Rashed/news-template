@@ -1,3 +1,9 @@
+const sidebar = document.querySelector("#sidebar");
 function toggle(){
-  document.querySelector("#sidebar").classList.toggle("expand");
+  sidebar.classList.toggle("expand");
+  if(sidebar.classList.value){
+     document.querySelector(".main").style.width = "calc(100% - 260px)";
+  }else{
+    document.querySelector(".main").style.width = "calc(100% - 70px)";
+  }
 }

@@ -24,10 +24,12 @@ h1 {
 
 .main {
     min-height: 100vh;
-    width: 100%;
+    width: calc(100% - 70px);
     overflow: hidden;
     transition: all 0.35s ease-in-out;
     background-color: #fafbfe;
+    position: absolute;
+    right: 0;
 }
 
 #sidebar {
@@ -38,6 +40,8 @@ h1 {
     background-color: #0e2238;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    height: 100vh;
 }
 
 #sidebar.expand {
